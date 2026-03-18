@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "eyebrow": "Premium Blanks — Elaborati a Mano in Germania",
+    "headline": "Crea Il Tuo Unico",
+    "subheadline": "VACE ridefinisce la streetwear personalizzata. Flanelle premium elevate con perle applicate a mano, distressing personalizzato e dettagli esclusivi – realizzati secondo la tua visione esatta.",
+    "cta": "Inizia Progettazione",
+    "howItWorks": "Come funziona",
+    "counter": "richieste oggi",
+    "urgency": "3 Posti disponibili questa settimana"
+  },
+  "header": {
+    "galerie": "Galleria"
+  },
+  "features": {
+    "title": "Ogni Pezzo è Unico",
+    "premium": {
+      "title": "Selezione Premium",
+      "description": "La base è sempre una flanella di peso elevato e qualità estremamente alta. Selezionata attentamente da noi per il perfetto stile streetwear moderno."
+    },
+    "embellished": {
+      "title": "Elaborato a Mano",
+      "description": "Vera artigianalità in ogni dettaglio. Ogni perla, ogni taglio e ogni applicazione personalizzata viene posizionata individualmente e con precisione nel nostro atelier in Germania."
+    },
+    "oneOf": {
+      "title": "Design 1 di 1",
+      "description": "Nessuna produzione di massa, nessun riassortimento. Il tuo pezzo viene perfezionato individualmente secondo la tua visione. Un pezzo unico che esiste solo per te."
+    }
+  },
+  "process": {
+    "title": "Il Processo",
+    "step1": {
+      "title": "Condividi La Tua Visione",
+      "description": "Raccontaci lo stile che stai cercando. Colore, vestibilità e livello di distressing – tu stabilisci la direzione, noi l'eseguiamo."
+    },
+    "step2": {
+      "title": "Selezione di Flanella Premium",
+      "description": "Cerchiamo la flanella base di peso elevato perfetta per il tuo progetto. La qualità e la vestibilità sono fondamentali qui."
+    },
+    "step3": {
+      "title": "Personalizzato a Mano",
+      "description": "Nel nostro atelier in Germania, il tuo pezzo viene perfezionato. Ogni perla, ogni taglio e ogni cuciture personalizzata viene posizionato a mano."
+    },
+    "step4": {
+      "title": "Il Tuo 1 di 1",
+      "description": "La tua flanella VACE esclusiva viene attentamente confezionata e spedita. Nessun altro al mondo ha esattamente questo pezzo."
+    }
+  },
+  "orderForm": {
+    "sectionLabel": "Il Tuo 1 di 1",
+    "headline": "Progetta Il Tuo VACE",
+    "description": "Compila il modulo – ti contatteremo entro 24 ore con il tuo preventivo personalizzato.",
+    "cta": "Progetta Ora",
+    "formLabel": "Modulo Ordine Personalizzato",
+    "live": "Live",
+    "trust1": "Fatto a Mano in Germania",
+    "trust2": "1 di 1 — Nessun Riassortimento",
+    "trust3": "Risposta in 24h"
+  },
+  "footer": {
+    "impressum": "Note Legali",
+    "agb": "Termini",
+    "widerruf": "Recesso",
+    "datenschutz": "Privacy",
+    "copyright": "© 2026 VACE Culture. Tutti i diritti riservati."
+  },
+  "privacy": {
+    "tally": {
+      "title": "Dati di Contatto (Tally)",
+      "description": "Nome, email e handle Instagram vengono elaborati esclusivamente per richieste personalizzate, fatturazione e spedizione.",
+      "legal": "Base legale: Art. 6 comma 1 lett. b GDPR (Adempimento degli obblighi contrattuali)",
+      "storage": "Periodo di archiviazione: 10 anni dopo la conclusione del contratto"
+    }
+  }
+}

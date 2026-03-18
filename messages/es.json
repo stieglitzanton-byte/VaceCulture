@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "eyebrow": "Premium Blanks — Elaboradas a Mano en Alemania",
+    "headline": "Crea Tu Pieza Única",
+    "subheadline": "VACE redefine la streetwear personalizada. Franelas premium elevadas con perlas aplicadas a mano, distressing personalizado y detalles exclusivos – elaborados según tu visión exacta.",
+    "cta": "Empezar Diseño",
+    "howItWorks": "Cómo funciona",
+    "counter": "solicitudes hoy",
+    "urgency": "3 Lugares libres esta semana"
+  },
+  "header": {
+    "galerie": "Galería"
+  },
+  "features": {
+    "title": "Cada Pieza es Única",
+    "premium": {
+      "title": "Selección Premium",
+      "description": "La base es siempre una franela de gran peso y extremadamente alta calidad. Cuidadosamente seleccionada por nosotros para el ajuste de streetwear moderno perfecto."
+    },
+    "embellished": {
+      "title": "Elaborada a Mano",
+      "description": "Verdadera artesanía en cada detalle. Cada perla, cada corte y cada aplicación personalizada se coloca individual y precisamente en nuestro atelier en Alemania."
+    },
+    "oneOf": {
+      "title": "Diseño 1 de 1",
+      "description": "Sin producción en masa, sin reabastecimientos. Tu pieza se refina individualmente según tu visión. Una única pieza que existe solo para ti."
+    }
+  },
+  "process": {
+    "title": "El Proceso",
+    "step1": {
+      "title": "Comparte Tu Visión",
+      "description": "Cuéntanos qué estilo buscas. Color, ajuste y nivel de distressing – tú estableces la dirección, nosotros lo ejecutamos."
+    },
+    "step2": {
+      "title": "Selección de Franela Premium",
+      "description": "Nos aseguramos de obtener la franela base de gran peso perfecta para tu proyecto. La calidad y el ajuste son lo primero aquí."
+    },
+    "step3": {
+      "title": "Personalizada a Mano",
+      "description": "En nuestro atelier en Alemania, tu pieza se refina. Cada perla, cada corte y cada costura personalizada se coloca a mano."
+    },
+    "step4": {
+      "title": "Tu 1 de 1",
+      "description": "Tu exclusiva franela VACE se empaqueta cuidadosamente y se te envía. Nadie más en el mundo tiene exactamente esta pieza."
+    }
+  },
+  "orderForm": {
+    "sectionLabel": "Tu 1 de 1",
+    "headline": "Diseña Tu VACE",
+    "description": "Rellena el formulario – nos pondremos en contacto dentro de 24 horas con tu presupuesto personalizado.",
+    "cta": "Diseñar Ahora",
+    "formLabel": "Formulario de Pedido Personalizado",
+    "live": "En Vivo",
+    "trust1": "Hecho a Mano en Alemania",
+    "trust2": "1 de 1 — Sin Reabastecimiento",
+    "trust3": "Respuesta en 24h"
+  },
+  "footer": {
+    "impressum": "Aviso Legal",
+    "agb": "Términos",
+    "widerruf": "Retracción",
+    "datenschutz": "Privacidad",
+    "copyright": "© 2026 VACE Culture. Todos los derechos reservados."
+  },
+  "privacy": {
+    "tally": {
+      "title": "Datos de Contacto (Tally)",
+      "description": "El nombre, correo electrónico y nombre de Instagram se procesan exclusivamente para solicitudes personalizadas, facturación y envío.",
+      "legal": "Base legal: Art. 6 apartado 1 letra b RGPD (Cumplimiento de obligaciones contractuales)",
+      "storage": "Período de almacenamiento: 10 años después de la terminación del contrato"
+    }
+  }
+}

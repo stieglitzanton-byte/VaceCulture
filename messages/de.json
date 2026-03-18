@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "eyebrow": "Premium Blanks — Handgefertigt in Deutschland",
+    "headline": "Erschaffe Dein Unikat",
+    "subheadline": "VACE definiert Custom Streetwear neu. Wir veredeln schwere Premium-Flannels in reiner Handarbeit – mit gesetzten Perlen, gezieltem Distressing und exklusiven Details.",
+    "cta": "Design starten",
+    "howItWorks": "So funktioniert's",
+    "counter": "Anfragen heute",
+    "urgency": "3 Spots frei diese Woche"
+  },
+  "header": {
+    "galerie": "Galerie"
+  },
+  "features": {
+    "title": "Jedes Piece ist einzigartig",
+    "premium": {
+      "title": "Premium Selection",
+      "description": "Die Basis bildet immer ein extrem hochwertiges, schweres Flannel. Sorgfältig von uns ausgewählt für den perfekten, modernen Streetwear-Fit."
+    },
+    "embellished": {
+      "title": "Hand-Embellished",
+      "description": "Echte Handarbeit im Detail. Jede Perle, jeder Cut und jede Custom-Applikation wird einzeln und präzise in unserem Atelier in Deutschland angebracht."
+    },
+    "oneOf": {
+      "title": "1 of 1 Design",
+      "description": "Keine Massenware, keine Restocks. Dein Piece wird individuell nach deiner Vision veredelt. Ein absolutes Unikat, das nur für dich existiert."
+    }
+  },
+  "process": {
+    "title": "Der Prozess",
+    "step1": {
+      "title": "Vision teilen",
+      "description": "Sag uns, welchen Vibe du suchst. Farbe, Fit und der Grad des Distressings – du gibst die Richtung vor, wir setzen es um."
+    },
+    "step2": {
+      "title": "Premium Blank Auswahl",
+      "description": "Wir sourcen das perfekte, schwere Base-Flannel für dein Projekt. Qualität und Schnitt stehen hier an erster Stelle."
+    },
+    "step3": {
+      "title": "Hand-Customized",
+      "description": "In unserem Atelier in Deutschland wird dein Piece veredelt. Jede Perle, jeder Cut und jede Custom-Naht wird von Hand platziert."
+    },
+    "step4": {
+      "title": "Dein 1 of 1",
+      "description": "Dein exklusives VACE Flannel wird hochwertig verpackt und an dich verschickt. Niemand sonst auf der Welt hat genau dieses Piece."
+    }
+  },
+  "orderForm": {
+    "sectionLabel": "Dein 1 of 1",
+    "headline": "Design Your VACE",
+    "description": "Füll das Formular aus — wir melden uns innerhalb von 24h mit deinem individuellen Angebot.",
+    "cta": "Design Jetzt",
+    "formLabel": "Custom Order Form",
+    "live": "Live",
+    "trust1": "Handmade in Deutschland",
+    "trust2": "1 of 1 — Kein Restock",
+    "trust3": "Antwort in 24h"
+  },
+  "footer": {
+    "impressum": "Impressum",
+    "agb": "AGB",
+    "widerruf": "Widerruf",
+    "datenschutz": "Datenschutz",
+    "copyright": "© 2026 VACE Culture. All rights reserved."
+  },
+  "privacy": {
+    "tally": {
+      "title": "Kontaktdaten (Tally)",
+      "description": "Name, E-Mail und Instagram-Name werden ausschließlich für Custom-Anfragen, Rechnungen und Versand verarbeitet.",
+      "legal": "Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Erfüllung von Vertragspflichten)",
+      "storage": "Speicherdauer: 10 Jahre nach Vertragsbeendigung"
+    }
+  }
+}

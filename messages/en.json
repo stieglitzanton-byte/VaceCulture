@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "eyebrow": "Premium Blanks — Hand-Crafted in Germany",
+    "headline": "Create Your Unique Piece",
+    "subheadline": "VACE redefines custom streetwear. Premium flannels elevated by hand-applied pearls, custom distressing, and exclusive details – crafted to your exact vision.",
+    "cta": "Start Designing",
+    "howItWorks": "How it works",
+    "counter": "requests today",
+    "urgency": "3 Spots left this week"
+  },
+  "header": {
+    "galerie": "Gallery"
+  },
+  "features": {
+    "title": "Every Piece is Unique",
+    "premium": {
+      "title": "Premium Selection",
+      "description": "The foundation is always an extremely high-quality, heavyweight flannel. Carefully selected by us for the perfect, modern streetwear fit."
+    },
+    "embellished": {
+      "title": "Hand-Embellished",
+      "description": "True craftsmanship in every detail. Each pearl, cut, and custom application is individually and precisely placed in our atelier in Germany."
+    },
+    "oneOf": {
+      "title": "1 of 1 Design",
+      "description": "No mass production, no restocks. Your piece is refined individually to your vision. An absolute one-of-a-kind that exists only for you."
+    }
+  },
+  "process": {
+    "title": "The Process",
+    "step1": {
+      "title": "Share Your Vision",
+      "description": "Tell us what vibe you're looking for. Color, fit, and the level of distressing – you set the direction, we execute it."
+    },
+    "step2": {
+      "title": "Premium Blank Selection",
+      "description": "We source the perfect, heavyweight base flannel for your project. Quality and fit are paramount here."
+    },
+    "step3": {
+      "title": "Hand-Customized",
+      "description": "In our atelier in Germany, your piece is refined. Each pearl, cut, and custom stitch is placed by hand."
+    },
+    "step4": {
+      "title": "Your 1 of 1",
+      "description": "Your exclusive VACE flannel is carefully packaged and shipped to you. No one else in the world has exactly this piece."
+    }
+  },
+  "orderForm": {
+    "sectionLabel": "Your 1 of 1",
+    "headline": "Design Your VACE",
+    "description": "Fill out the form – we'll get back to you within 24 hours with your custom quote.",
+    "cta": "Design Now",
+    "formLabel": "Custom Order Form",
+    "live": "Live",
+    "trust1": "Handmade in Germany",
+    "trust2": "1 of 1 — No Restock",
+    "trust3": "Response in 24h"
+  },
+  "footer": {
+    "impressum": "Imprint",
+    "agb": "Terms",
+    "widerruf": "Withdrawal",
+    "datenschutz": "Privacy",
+    "copyright": "© 2026 VACE Culture. All rights reserved."
+  },
+  "privacy": {
+    "tally": {
+      "title": "Contact Data (Tally)",
+      "description": "Name, email, and Instagram handle are processed exclusively for custom requests, invoicing, and shipping.",
+      "legal": "Legal basis: Art. 6 para. 1 lit. b GDPR (Performance of contractual obligations)",
+      "storage": "Storage period: 10 years after contract termination"
+    }
+  }
+}
