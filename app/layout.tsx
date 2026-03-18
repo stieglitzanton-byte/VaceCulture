@@ -10,14 +10,14 @@ const _inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const _spaceMono = Space_Mono({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-space-mono" })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vace-culture.com'),
+  metadataBase: new URL('https://vaceculture.com'),
 }
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ClothingStore',
   name: 'VACE Culture',
-  url: 'https://vace-culture.com',
+  url: 'https://vaceculture.com',
   description: 'Premium 1-of-1 custom streetwear brand from Germany',
   brand: {
     '@type': 'Brand',

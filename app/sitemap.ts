@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-const BASE_URL = 'https://vace-culture.com'
+const BASE_URL = 'https://vaceculture.com'
 const locales = ['de', 'en', 'it', 'es'] as const
 
 type ChangeFrequency = 'weekly' | 'monthly' | 'always' | 'hourly' | 'daily' | 'yearly' | 'never'

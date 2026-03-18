@@ -4,10 +4,10 @@ import React, { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
 
 const IMAGES = [
-    { src: '/images/vace-flannel.jpg', alt: 'VACE Culture Custom Flannel with Hand-Applied Pearls – custom streetwear' },
-    { src: '/images/carousel-1.jpg', alt: 'VACE Culture Flannel Street Styling – custom streetwear' },
-    { src: '/images/carousel-2.jpg', alt: 'VACE Culture Pearl Embellishment Detail Shot – custom streetwear' },
-    { src: '/images/carousel-3.jpg', alt: 'VACE Culture Custom Flannel Back View – custom streetwear' },
+    { src: '/images/vace-flannel.webp', alt: 'VACE Culture Custom Flannel with Hand-Applied Pearls – custom streetwear' },
+    { src: '/images/carousel-1.webp', alt: 'VACE Culture Flannel Street Styling – custom streetwear' },
+    { src: '/images/carousel-2.webp', alt: 'VACE Culture Pearl Embellishment Detail Shot – custom streetwear' },
+    { src: '/images/carousel-3.webp', alt: 'VACE Culture Custom Flannel Back View – custom streetwear' },
 ]
 
 export default function HeroCarousel() {

@@ -9,7 +9,7 @@ type Props = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vace-culture.com'),
+  metadataBase: new URL('https://vaceculture.com'),
   title: {
     default: 'VACE Culture – Premium Custom Streetwear',
     template: '%s | VACE Culture',

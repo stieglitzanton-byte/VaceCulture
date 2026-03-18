@@ -1,4 +1,4 @@
-const BASE_URL = 'https://vace-culture.com'
+const BASE_URL = 'https://vaceculture.com'
 const locales = ['de', 'en', 'it', 'es'] as const
 
 export function generateAlternates(path: string) {
