@@ -3,7 +3,9 @@
     "allow": [
       "Bash(ls -la \"C:\\\\Users\\\\Anton\\\\A&F\\\\Vace Webseite\")",
       "Bash(find \"C:\\\\Users\\\\Anton\\\\A&F\\\\Vace Webseite/app\" -type f)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(ls -la \"/c/Users/Anton/A&F/Vace Webseite/\")",
+      "Bash(ls:*)"
     ]
   }
 }

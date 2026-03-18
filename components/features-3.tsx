@@ -1,11 +1,16 @@
+'use client'
+
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Shirt, Sparkles, Diamond } from 'lucide-react'
 import React, { ReactNode } from 'react'
 import { TextEffect } from "@/components/motion-primitives/text-effect"
 import { transitionVariants } from "@/lib/utils"
 import { AnimatedGroup } from "@/components/motion-primitives/animated-group"
+import { useTranslations } from '@/lib/i18n-provider'
 
 export default function Features() {
+    const t = useTranslations('features')
+
     return (
         <section id="how" className="py-16 md:py-32">
             <div className="@container mx-auto max-w-5xl px-6">
@@ -16,7 +21,7 @@ export default function Features() {
                         speedSegment={0.3}
                         as="h2"
                         className="text-balance text-4xl font-bold lg:text-5xl text-foreground">
-                        Jedes Piece ist einzigartig
+                        {t('title')}
                     </TextEffect>
                 </div>
                 <AnimatedGroup
@@ -43,10 +48,10 @@ export default function Features() {
                                         aria-hidden
                                     />
                                 </CardDecorator>
-                                <h3 className="mt-6 font-medium text-xl text-foreground">Premium Selection</h3>
+                                <h3 className="mt-6 font-medium text-xl text-foreground">{t('premium.title')}</h3>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-sm text-muted-foreground">{'Die Basis bildet immer ein extrem hochwertiges, schweres Flannel. Sorgfältig von uns ausgewählt für den perfekten, modernen Streetwear-Fit.'}</p>
+                                <p className="text-sm text-muted-foreground">{t('premium.description')}</p>
                             </CardContent>
                         </div>
 
@@ -58,10 +63,10 @@ export default function Features() {
                                         aria-hidden
                                     />
                                 </CardDecorator>
-                                <h3 className="mt-6 font-medium text-xl text-foreground">Hand-Embellished</h3>
+                                <h3 className="mt-6 font-medium text-xl text-foreground">{t('embellished.title')}</h3>
                             </CardHeader>
                             <CardContent>
-                                <p className="mt-3 text-sm text-muted-foreground">{'Echte Handarbeit im Detail. Jede Perle, jeder Cut und jede Custom-Applikation wird einzeln und präzise in unserem Atelier in Deutschland angebracht.'}</p>
+                                <p className="mt-3 text-sm text-muted-foreground">{t('embellished.description')}</p>
                             </CardContent>
                         </div>
 
@@ -73,10 +78,10 @@ export default function Features() {
                                         aria-hidden
                                     />
                                 </CardDecorator>
-                                <h3 className="mt-6 font-medium text-xl text-foreground">{'1 of 1 Design'}</h3>
+                                <h3 className="mt-6 font-medium text-xl text-foreground">{t('oneOf.title')}</h3>
                             </CardHeader>
                             <CardContent>
-                                <p className="mt-3 text-sm text-muted-foreground">{'Keine Massenware, keine Restocks. Dein Piece wird individuell nach deiner Vision veredelt. Ein absolutes Unikat, das nur für dich existiert.'}</p>
+                                <p className="mt-3 text-sm text-muted-foreground">{t('oneOf.description')}</p>
                             </CardContent>
                         </div>
                     </Card>

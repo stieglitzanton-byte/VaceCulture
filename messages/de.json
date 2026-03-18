@@ -63,6 +63,12 @@
     "datenschutz": "Datenschutz",
     "copyright": "© 2026 VACE Culture. All rights reserved."
   },
+  "cta": {
+    "headline": "Bereit für dein Unikat?",
+    "subheadline": "Limitierte Drops. Kein Piece gleicht dem anderen. Starte jetzt deinen Design-Prozess.",
+    "designStart": "Design starten",
+    "contact": "Kontakt"
+  },
   "privacy": {
     "tally": {
       "title": "Kontaktdaten (Tally)",
