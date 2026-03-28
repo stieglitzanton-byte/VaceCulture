@@ -1,13 +1,13 @@
 import React from "react"
 import type { Metadata } from 'next'
-import { Inter, Space_Mono } from 'next/font/google'
+import { Inter, Space_Mono, Bebas_Neue } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { headers } from 'next/headers'
 import './globals.css'
-import Dither from "@/components/Dither"
 
 const _inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const _spaceMono = Space_Mono({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-space-mono" })
+const _bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vaceculture.com'),
@@ -48,20 +48,7 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${_inter.variable} ${_spaceMono.variable} font-sans antialiased`}>
-        <div className='absolute w-full h-dvh max-h-155 sm:max-h-115 md:max-h-125 lg:max-h-190 xl:max-h-195'>
-          <Dither
-            waveColor={[0.15, 0.02, 0.02]}
-            disableAnimation={false}
-            enableMouseInteraction
-            mouseRadius={0.3}
-            colorNum={4}
-            pixelSize={2}
-            waveAmplitude={0.3}
-            waveFrequency={3}
-            waveSpeed={0.03}
-          />
-        </div>
+      <body className={`${_inter.variable} ${_spaceMono.variable} ${_bebasNeue.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

@@ -2,11 +2,13 @@
   "hero": {
     "eyebrow": "Premium Blanks — Hand-Crafted in Germany",
     "headline": "Create Your Unique Piece",
-    "subheadline": "VACE redefines custom streetwear. Premium flannels elevated by hand-applied pearls, custom distressing, and exclusive details – crafted to your exact vision.",
+    "subheadline": "Handmade. Limited. Just for you.",
     "cta": "Start Designing",
     "howItWorks": "How it works",
     "counter": "requests today",
-    "urgency": "3 Spots left this week"
+    "urgency": "3 SPOTS LEFT",
+    "urgencyCountdown": "Ends in",
+    "ctaTrust": "Response within 24h"
   },
   "header": {
     "galerie": "Gallery"

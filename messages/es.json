@@ -2,11 +2,13 @@
   "hero": {
     "eyebrow": "Premium Blanks — Elaboradas a Mano en Alemania",
     "headline": "Crea Tu Pieza Única",
-    "subheadline": "VACE redefine la streetwear personalizada. Franelas premium elevadas con perlas aplicadas a mano, distressing personalizado y detalles exclusivos – elaborados según tu visión exacta.",
+    "subheadline": "Hecho a mano. Limitado. Solo para ti.",
     "cta": "Empezar Diseño",
     "howItWorks": "Cómo funciona",
     "counter": "solicitudes hoy",
-    "urgency": "3 Lugares libres esta semana"
+    "urgency": "3 SPOTS LIBRES",
+    "urgencyCountdown": "Termina en",
+    "ctaTrust": "Respuesta en 24h"
   },
   "header": {
     "galerie": "Galería"

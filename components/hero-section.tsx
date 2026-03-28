@@ -27,34 +27,79 @@ function useAnfragenCount() {
     return count
 }
 
+function getNextSunday(): Date {
+    const now = new Date()
+    const dayOfWeek = now.getDay()
+    const daysUntilSunday = dayOfWeek === 0 ? 0 : 7 - dayOfWeek
+    const sunday = new Date(now)
+    sunday.setDate(now.getDate() + daysUntilSunday)
+    sunday.setHours(23, 59, 59, 0)
+    return sunday
+}
+
+function useCountdown(): string {
+    const [timeLeft, setTimeLeft] = useState('')
+
+    useEffect(() => {
+        const target = getNextSunday()
+
+        function update() {
+            const diff = target.getTime() - Date.now()
+            if (diff <= 0) {
+                setTimeLeft('00:00:00')
+                return
+            }
+            const h = Math.floor(diff / 3600000)
+            const m = Math.floor((diff % 3600000) / 60000)
+            const s = Math.floor((diff % 60000) / 1000)
+            setTimeLeft(
+                `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
+            )
+        }
+
+        update()
+        const interval = setInterval(update, 1000)
+        return () => clearInterval(interval)
+    }, [])
+
+    return timeLeft
+}
+
 export default function HeroSection() {
     const anfragen = useAnfragenCount()
+    const countdown = useCountdown()
     const t = useTranslations('hero')
 
     return (
         <main className="overflow-x-hidden">
-            {/* Urgency banner */}
+            {/* Urgency Banner */}
             <div
                 className="fixed top-0 left-0 right-0 z-30 flex items-center justify-center py-1.5 text-center"
-                style={{ backgroundColor: '#CC0000' }}
+                style={{ backgroundColor: '#C8001E' }}
             >
-                <span className="relative flex size-2 mr-2">
+                <span className="relative flex size-2 mr-2 shrink-0">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/60" />
                     <span className="relative inline-flex size-2 rounded-full bg-white" />
                 </span>
                 <p className="font-mono text-xs tracking-widest uppercase text-white/95">
-                    {t('urgency')}
+                    {t('urgency')}{countdown ? ` – ${t('urgencyCountdown')} ${countdown}` : ''}
                 </p>
             </div>
 
-            <section className="relative min-h-screen flex items-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-black to-gray-900 -z-10" />
-
+            <section
+                className="relative min-h-screen flex items-center"
+                style={{ backgroundColor: '#0A0A0A' }}
+            >
                 <div className="w-full max-w-screen-xl mx-auto px-6 lg:px-12 pt-28 pb-16 lg:pt-36 lg:pb-24">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-16">
 
-                        {/* LEFT SIDE – 60% */}
-                        <div className="flex-none w-full lg:w-[60%]">
+                        {/* IMAGE – above text on mobile, right on desktop */}
+                        <div className="order-first lg:order-last flex-none w-full lg:w-[40%] h-[280px] md:h-[520px] lg:h-[600px]">
+                            <HeroCarousel />
+                        </div>
+
+                        {/* TEXT – below image on mobile, left on desktop */}
+                        <div className="order-last lg:order-first flex-none w-full lg:w-[60%]">
                             <AnimatedGroup
                                 variants={{
                                     container: {
@@ -69,54 +114,93 @@ export default function HeroSection() {
                                     {t('eyebrow')}
                                 </p>
 
-                                {/* H1 */}
-                                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold text-white leading-[1.05] tracking-tight text-balance">
+                                {/* H1 – untouched */}
+                                <h1 className="text-[40px] md:text-6xl xl:text-7xl font-bold text-white leading-[1.05] tracking-tight text-balance">
                                     {t('headline')}
                                 </h1>
 
-                                {/* Live counter */}
-                                <div className="flex items-center gap-2 mt-6">
-                                    <span className="relative flex size-2">
-                                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-60" style={{ backgroundColor: '#CC0000' }} />
-                                        <span className="relative inline-flex size-2 rounded-full" style={{ backgroundColor: '#CC0000' }} />
-                                    </span>
-                                    <p className="font-mono text-xs tracking-widest uppercase text-white/40">
-                                        <span className="text-white font-bold">{anfragen}</span>{' '}{t('counter')}
-                                    </p>
-                                </div>
-
-                                {/* Subtitle */}
+                                {/* Subheadline – short 3-word version */}
                                 <p
-                                    className="mt-7 max-w-xl text-xl text-white/90"
-                                    style={{ lineHeight: '1.4' }}
+                                    className="mt-5"
+                                    style={{
+                                        fontFamily: 'Inter, sans-serif',
+                                        fontSize: '16px',
+                                        color: '#888888',
+                                        letterSpacing: '0.05em',
+                                        lineHeight: '1.5',
+                                    }}
                                 >
                                     {t('subheadline')}
                                 </p>
 
-                                {/* CTA */}
-                                <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                                {/* Social Proof Badge – directly under subheadline */}
+                                <div className="flex items-center gap-2.5 mt-4">
+                                    <span className="relative flex shrink-0" style={{ width: '10px', height: '10px' }}>
+                                        <span
+                                            className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75"
+                                            style={{ backgroundColor: '#C8001E' }}
+                                        />
+                                        <span
+                                            className="relative inline-flex rounded-full"
+                                            style={{ width: '10px', height: '10px', backgroundColor: '#C8001E' }}
+                                        />
+                                    </span>
+                                    <p
+                                        style={{
+                                            fontFamily: 'var(--font-bebas, "Bebas Neue", sans-serif)',
+                                            fontSize: '14px',
+                                            letterSpacing: '0.15em',
+                                            color: '#888888',
+                                            textTransform: 'uppercase',
+                                        }}
+                                    >
+                                        <span style={{ color: '#ffffff' }}>{anfragen}</span>
+                                        {' '}{t('counter')}
+                                    </p>
+                                </div>
+
+                                {/* CTA Group */}
+                                <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full">
                                     <a
                                         href="#order-form"
-                                        className="inline-flex items-center justify-center rounded-full px-8 py-4 text-base font-semibold text-white shadow-2xl transition-all duration-200 hover:scale-[1.03]"
-                                        style={{ backgroundColor: '#CC0000' }}
-                                        onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#b91c1c')}
-                                        onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#CC0000')}
+                                        className="inline-flex items-center justify-center rounded-full text-base font-semibold text-white shadow-2xl w-full sm:w-auto"
+                                        style={{
+                                            backgroundColor: '#C8001E',
+                                            padding: '18px 40px',
+                                            transition: 'transform 0.2s ease',
+                                        }}
+                                        onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.03)')}
+                                        onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
                                     >
                                         {t('cta')}
                                     </a>
-                                    <a
-                                        href="#how"
-                                        className="text-base text-white/50 underline underline-offset-4 decoration-white/20 hover:text-white/80 hover:decoration-white/50 transition-colors"
-                                    >
-                                        {t('howItWorks')}
-                                    </a>
+
+                                    <div className="flex flex-col gap-1.5">
+                                        <a
+                                            href="#how"
+                                            className="text-base transition-all"
+                                            style={{
+                                                color: 'rgba(255,255,255,0.6)',
+                                                opacity: 0.6,
+                                                textDecoration: 'none',
+                                            }}
+                                            onMouseEnter={e => {
+                                                e.currentTarget.style.opacity = '1'
+                                                e.currentTarget.style.textDecoration = 'underline'
+                                            }}
+                                            onMouseLeave={e => {
+                                                e.currentTarget.style.opacity = '0.6'
+                                                e.currentTarget.style.textDecoration = 'none'
+                                            }}
+                                        >
+                                            {t('howItWorks')}
+                                        </a>
+                                        <span style={{ fontSize: '12px', color: '#888888' }}>
+                                            ↩ {t('ctaTrust')}
+                                        </span>
+                                    </div>
                                 </div>
                             </AnimatedGroup>
-                        </div>
-
-                        {/* RIGHT SIDE – 40% */}
-                        <div className="flex-none w-full lg:w-[40%] h-[420px] md:h-[520px] lg:h-[600px]">
-                            <HeroCarousel />
                         </div>
 
                     </div>

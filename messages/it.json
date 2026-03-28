@@ -2,11 +2,13 @@
   "hero": {
     "eyebrow": "Premium Blanks — Elaborati a Mano in Germania",
     "headline": "Crea Il Tuo Unico",
-    "subheadline": "VACE ridefinisce la streetwear personalizzata. Flanelle premium elevate con perle applicate a mano, distressing personalizzato e dettagli esclusivi – realizzati secondo la tua visione esatta.",
+    "subheadline": "Fatto a mano. Limitato. Solo per te.",
     "cta": "Inizia Progettazione",
     "howItWorks": "Come funziona",
     "counter": "richieste oggi",
-    "urgency": "3 Posti disponibili questa settimana"
+    "urgency": "3 POSTI LIBERI",
+    "urgencyCountdown": "Termina in",
+    "ctaTrust": "Risposta entro 24h"
   },
   "header": {
     "galerie": "Galleria"

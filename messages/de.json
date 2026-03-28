@@ -2,11 +2,13 @@
   "hero": {
     "eyebrow": "Premium Blanks — Handgefertigt in Deutschland",
     "headline": "Erschaffe Dein Unikat",
-    "subheadline": "VACE definiert Custom Streetwear neu. Wir veredeln schwere Premium-Flannels in reiner Handarbeit – mit gesetzten Perlen, gezieltem Distressing und exklusiven Details.",
+    "subheadline": "Handgefertigt. Limitiert. Nur für dich.",
     "cta": "Design starten",
     "howItWorks": "So funktioniert's",
     "counter": "Anfragen heute",
-    "urgency": "3 Spots frei diese Woche"
+    "urgency": "3 SPOTS FREI",
+    "urgencyCountdown": "Endet in",
+    "ctaTrust": "Antwort innerhalb 24h"
   },
   "header": {
     "galerie": "Galerie"

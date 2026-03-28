@@ -82,6 +82,10 @@ export default function HeroCarousel() {
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, 40vw"
                             priority={idx === 0}
+                            style={{
+                                filter: 'contrast(1.1) saturate(0.8) brightness(0.9)',
+                                objectPosition: 'center top',
+                            }}
                         />
                         {/* Subtle dark vignette */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none" />
