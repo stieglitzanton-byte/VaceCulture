@@ -6,7 +6,11 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "next start",
+    "video:studio": "remotion studio src/index.ts",
+    "video:render": "remotion render src/index.ts VACEStoryVideo --output out/vace-story.mp4",
+    "video:preview": "remotion preview src/index.ts",
+    "video:viral": "remotion render src/index.ts VaceViralDrop --output out/vace-viral-drop.mp4 --codec h264"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
@@ -42,6 +46,8 @@
     "@react-three/fiber": "^9.5.0",
     "@react-three/postprocessing": "^3.0.4",
     "@react-three/rapier": "^2.2.0",
+    "@remotion/cli": "^4.0.438",
+    "@remotion/google-fonts": "^4.0.438",
     "@vercel/analytics": "^1.3.1",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
@@ -63,6 +69,7 @@
     "react-resizable-panels": "^2.1.7",
     "react-use-measure": "^2.1.7",
     "recharts": "2.15.4",
+    "remotion": "^4.0.438",
     "sonner": "^1.7.4",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",

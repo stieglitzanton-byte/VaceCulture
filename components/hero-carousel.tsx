@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect, useRef, useCallback } from 'react'
-import Image from 'next/image'
+import { SmartImage } from '@/components/smart-image'
 
 const IMAGES = [
     { src: '/images/vace-flannel.webp', alt: 'VACE Culture Custom Flannel with Hand-Applied Pearls – custom streetwear' },
@@ -75,12 +75,14 @@ export default function HeroCarousel() {
                             zIndex: idx === current ? 1 : 0,
                         }}
                     >
-                        <Image
+                        <SmartImage
                             src={img.src}
                             alt={img.alt}
                             fill
                             className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 40vw"
+                            desktopSizes="(max-width: 768px) 100vw, 40vw"
+                            desktopQuality={75}
+                            mobileQuality={90}
                             priority={idx === 0}
                             style={{
                                 filter: 'contrast(1.1) saturate(0.8) brightness(0.9)',
