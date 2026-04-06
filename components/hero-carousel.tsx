@@ -4,10 +4,11 @@ import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { SmartImage } from '@/components/smart-image'
 
 const IMAGES = [
-    { src: '/images/vace-flannel.webp', alt: 'VACE Culture Custom Flannel with Hand-Applied Pearls – custom streetwear' },
-    { src: '/images/carousel-1.webp', alt: 'VACE Culture Flannel Street Styling – custom streetwear' },
-    { src: '/images/carousel-2.webp', alt: 'VACE Culture Pearl Embellishment Detail Shot – custom streetwear' },
-    { src: '/images/carousel-3.webp', alt: 'VACE Culture Custom Flannel Back View – custom streetwear' },
+    { src: '/images/carousel-1.webp', alt: 'VACE Culture Flannel Street Styling – custom streetwear', width: 1080, height: 1350 },
+    { src: '/images/carousel-2.webp', alt: 'VACE Culture Pearl Embellishment Detail Shot – custom streetwear', width: 1080, height: 1350 },
+    { src: '/images/carousel-3.webp', alt: 'VACE Culture Custom Flannel Back View – custom streetwear', width: 1080, height: 1350 },
+    { src: '/images/carousel-4.webp', alt: 'VACE Culture Custom Flannel Detail – custom streetwear', width: 1080, height: 1350 },
+    { src: '/images/carousel-5.webp', alt: 'VACE Culture Flannel Lifestyle Shot – custom streetwear', width: 1080, height: 1350 },
 ]
 
 export default function HeroCarousel() {
@@ -84,9 +85,13 @@ export default function HeroCarousel() {
                             desktopQuality={75}
                             mobileQuality={90}
                             priority={idx === 0}
+                            loading={idx === 0 ? 'eager' : 'lazy'}
+                            decoding="async"
                             style={{
                                 filter: 'contrast(1.1) saturate(0.8) brightness(0.9)',
                                 objectPosition: 'center top',
+                                width: '100%',
+                                height: '100%',
                             }}
                         />
                         {/* Subtle dark vignette */}

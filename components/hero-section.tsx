@@ -94,7 +94,7 @@ export default function HeroSection() {
                     <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-16">
 
                         {/* IMAGE – above text on mobile, right on desktop */}
-                        <div className="order-first lg:order-last flex-none w-full lg:w-[40%] h-[280px] md:h-[520px] lg:h-[600px]">
+                        <div className="order-first lg:order-last flex-none w-full lg:w-[40%] overflow-hidden h-[clamp(300px,70vw,450px)] lg:h-[600px]">
                             <HeroCarousel />
                         </div>
 
